@@ -48,6 +48,7 @@ public class GuideActivity extends BaseActivity implements View.OnClickListener 
         btnSkip.setOnClickListener(this);
         // btnSkip.getBackground().setAlpha(20);
         // 初始化3个引导页
+
         for (int i = 0; i < mImage.length; i++) {
             // RelativeLayout relativeLayout = new RelativeLayout(mContext);
             // ImageView imageView = new ImageView(mContext);
