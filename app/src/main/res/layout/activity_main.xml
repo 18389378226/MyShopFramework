@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_guide" />
+
+    <LinearLayout
+        android:id="@+id/ll_guide"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_custom_gray" />
+
+        <RadioGroup
+            android:id="@+id/rg_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.chensen.myshopframework.common.view.MyRadioButton
+                android:id="@+id/rb_home"
+                style="@style/MyNavigationStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="首页"
+                app:drawableTop="@drawable/selector_img_home"
+                app:drawableTopHeight="20.5dp"
+                app:drawableTopWith="20.5dp" />
+
+
+            <com.chensen.myshopframework.common.view.MyRadioButton
+                android:id="@+id/rb_soft"
+                style="@style/MyNavigationStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="软装"
+                app:drawableTop="@drawable/selector_img_soft"
+                app:drawableTopHeight="20.5dp"
+                app:drawableTopWith="25.5dp" />
+
+            <com.chensen.myshopframework.common.view.MyRadioButton
+                android:id="@+id/rb_center"
+                style="@style/MyNavigationStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="我的"
+                app:drawableTop="@drawable/selector_img_center"
+                app:drawableTopHeight="20.5dp"
+                app:drawableTopWith="18.5dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
